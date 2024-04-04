@@ -1,0 +1,7 @@
+Name: linguist
+Description: Find out what languages are used within a local project.  The project has to be a local git working copy.
+Args: project_dir: the root directory of the project
+
+#!bash
+
+docker run --rm -v ${project_dir}:/project crazymax/linguist /project
